@@ -126,32 +126,32 @@
 <div id="step-1-clone-the-github-repository" class="section level1">
 <h1 class="hasAnchor">
 <a href="#step-1-clone-the-github-repository" class="anchor" aria-hidden="true"></a>Step 1: Clone the GitHub repository</h1>
-<p>The contents of this repo need to be cloned to your local computer/device. This is done by cloning the repo. Don’t fork the repo as you won’t be contributing to this package skeleton (at least I don’t expect you will — however that’s OK too) but instead will be using this as a starting point to create your own customzed R package/GitHub repo that will, ideally, be quite different.</p>
+<p>The contents of this repo need to be cloned to your local computer/device. This is done by <a href="https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository">cloning the repo</a>. Don’t fork the repo as you won’t be contributing to this package skeleton (at least I don’t expect you will — however that’s OK too) but instead will be using this as a starting point to create your own customzed R package/GitHub repo that will, ideally, be quite different. If you’re using RStudio, there are some easy to follow directions on how to integrate RStudio with GitHub and, among many other things, <a href="https://happygitwithr.com/rstudio-git-github.html">clone a repo</a>.</p>
 </div>
 <div id="step-2-create-a-repo-in-your-account-for-your-package" class="section level1">
 <h1 class="hasAnchor">
 <a href="#step-2-create-a-repo-in-your-account-for-your-package" class="anchor" aria-hidden="true"></a>Step 2: Create a repo in your account for your package</h1>
-<p>Go to your personal (or institutional) GitHub page, look for the <code>repositories</code> tab and click on the <code>new</code> button to start creating a new repo that will house the source code for your R package. Here’s a screenshot from my initial setup:</p>
-<p><img src="img/create_new_repo.png" alt="Create a new repo with your package name and description" style="width:80%;"></p>
+<p>Once you have cloned the <strong>packageSkeletonForR</strong> repo, you need to create a repo in your personal (or institutional) GitHub page that will house your modified version of this package skeleton. Go to your GitHub page and look for the <code>repositories</code> tab toward the top and click on the <code>new</code> button to start creating a new repo that will house the source code for your R package. Here’s a screenshot from my initial setup:</p>
+<p><img src="img/create_new_repo.png" alt="Create a new repo with your package name and description" style="width:80%; border: 1px solid #ddd; border-radius: 4px;"></p>
 </div>
 <div id="step-3-have-fun-customizing-the-package" class="section level1">
 <h1 class="hasAnchor">
 <a href="#step-3-have-fun-customizing-the-package" class="anchor" aria-hidden="true"></a>Step 3: Have fun customizing the package</h1>
-<p>The <strong>packageSkeletonForR</strong> package is a super simple R package that contains just two functions for illustration purposes: <code>strHead</code> and <code>strTail</code>. These two functions take the first <em>n</em> characters of the head or tail of a character string (or a vector of character strings), respectively. They are the analogs of the R functions <code>head</code> and <code>tail</code> but for strings. You’re welcome to keep these functions or remove them.</p>
+<p>The <strong>packageSkeletonForR</strong> package is a super simple R package that contains just two functions for illustration purposes: <code>strHead</code> and <code>strTail</code>. These two functions take two arguments (<code>string</code> and <code>n_char</code>) and take the first <em>n_char</em> characters off the head or tail of the <code>string</code> (or a vector of character strings), respectively. They are the analogs of the R functions <code>head</code> and <code>tail</code> but for strings. You’re welcome to keep these functions or remove them.</p>
 <p>Some things you should do:</p>
 <ul>
 <li>Change the name of the package from <code>packageSkeletonForR</code> to something you want (in these instructions we’ll call is <code>myPackageName</code>). Throughout the package change any occurrence of <code>packageSkeletonForR</code> to the name you pick.</li>
 <li>Add additional functions to the package.</li>
 <li>For each new function you add, update the <code>NAMESPACE</code> (export the function) and document the function in the <code>man</code> (manual) folder. Examine the current <code>NAMESPACE</code> and <code>man</code> folder contents to see how that is done.</li>
 <li>Update the <code>NEWS.md</code> and <code>NEWS</code> files indicating changes to the package. NEWS.md is used for the static website and, ideally, will just be a copy of <code>NEWS</code>.</li>
-<li>Add a vignette to the <code>vignettes</code> folder. Use the basic vignette (<code>packageSkeletonForR.Rmd</code>) in the folder as a starter.</li>
+<li>Add a vignette to the <code>vignettes</code> folder. Use the basic vignette that you’re reading now (<code>packageSkeletonForR.Rmd</code>) in the folder as a starter.</li>
 <li>Change the version number in <code>DESCRIPTION</code>, <code>inst/CITATION</code>, <code>man/packageSkeletonForR.Rmd</code> (last file should be named the package name you picked).</li>
 </ul>
 </div>
-<div id="step-4-compile-your-package-locally" class="section level1">
+<div id="step-4-build-check-and-install-your-package-locally" class="section level1">
 <h1 class="hasAnchor">
-<a href="#step-4-compile-your-package-locally" class="anchor" aria-hidden="true"></a>Step 4: Compile your package locally</h1>
-<p>To make sure everything is working (be prepared to have some things not work) build your package locally. If you’re using RStudio, there are capabilities to build the package embedded into the user interface. If you are using</p>
+<a href="#step-4-build-check-and-install-your-package-locally" class="anchor" aria-hidden="true"></a>Step 4: Build, check and install your package locally</h1>
+<p>Once you get your package tidied up with name changes and customizations, to make sure everything is working build your package locally. If you’re using RStudio, there are capabilities to <a href="https://support.rstudio.com/hc/en-us/articles/200486488-Developing-Packages-with-RStudio">build the package</a> included in the user interface. If you are using OSX or Windows you will likely be using the command line to <a href="https://kbroman.org/pkg_primer/pages/build.html">build, check, and install your package locally</a>.</p>
 </div>
 <div id="step-5-update-your-package-website" class="section level1">
 <h1 class="hasAnchor">
@@ -193,7 +193,7 @@
       <li><a href="#step-1-clone-the-github-repository">Step 1: Clone the GitHub repository</a></li>
       <li><a href="#step-2-create-a-repo-in-your-account-for-your-package">Step 2: Create a repo in your account for your package</a></li>
       <li><a href="#step-3-have-fun-customizing-the-package">Step 3: Have fun customizing the package</a></li>
-      <li><a href="#step-4-compile-your-package-locally">Step 4: Compile your package locally</a></li>
+      <li><a href="#step-4-build-check-and-install-your-package-locally">Step 4: Build, check and install your package locally</a></li>
       <li><a href="#step-5-update-your-package-website">Step 5: Update your package website</a></li>
       <li><a href="#step-6-push-your-package-to-github-and-set-up-github">Step 6: Push your package to GitHub and set up GitHub</a></li>
       <li><a href="#contributions-requests">Contributions &amp; Requests</a></li>

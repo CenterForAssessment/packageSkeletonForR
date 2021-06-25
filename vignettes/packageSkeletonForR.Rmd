@@ -47,23 +47,26 @@ You'll need to have software installed and access to GitHub to make all of this 
 
 # Step 1: Clone the GitHub repository
 
-The contents of this repo need to be cloned to your local computer/device. This is done by cloning the repo. Don't fork the repo as you won't be
+The contents of this repo need to be cloned to your local computer/device. This is done by [cloning the repo](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository). Don't fork the repo as you won't be
 contributing to this package skeleton (at least I don't expect you will --- however that's OK too) but instead will be using this as a starting point
-to create your own customzed R package/GitHub repo that will, ideally, be quite different.
+to create your own customzed R package/GitHub repo that will, ideally, be quite different. If you're using RStudio, there are some easy to
+follow directions on how to integrate RStudio with GitHub and, among many other things, [clone a repo](https://happygitwithr.com/rstudio-git-github.html).
 
 
 # Step 2: Create a repo in your account for your package
 
-Go to your personal (or institutional) GitHub page, look for the `repositories` tab and click on the `new` button to start creating a new repo that
-will house the source code for your R package. Here's a screenshot from my initial setup:
+Once you have cloned the **packageSkeletonForR** repo, you need to create a repo in your personal (or institutional) GitHub page that will house your
+modified version of this package skeleton. Go to your GitHub page and look for the `repositories` tab toward the top and click on the `new` button to
+start creating a new repo that will house the source code for your R package. Here's a screenshot from my initial setup:
 
-<img src="img/create_new_repo.png" alt="Create a new repo with your package name and description" style="width:80%;"/>
+<img src="img/create_new_repo.png" alt="Create a new repo with your package name and description" style="width:80%; border: 1px solid #ddd; border-radius: 4px;"/>
+
 
 # Step 3: Have fun customizing the package
 
 The **packageSkeletonForR** package is a super simple R package that contains just two functions for illustration purposes: `strHead` and `strTail`.
-These two functions take the first *n* characters of the head or tail of a character string (or a vector of character strings), respectively. They are
-the analogs of the R functions `head` and `tail` but for strings. You're welcome to keep these functions or remove them.
+These two functions take two arguments (`string` and `n_char`) and take the first *n_char* characters off the head or tail of the `string` (or a
+vector of character strings), respectively. They are the analogs of the R functions `head` and `tail` but for strings. You're welcome to keep these functions or remove them.
 
 Some things you should do:
 
@@ -71,15 +74,21 @@ Some things you should do:
 * Add additional functions to the package.
 * For each new function you add, update the `NAMESPACE` (export the function) and document the function in the `man` (manual) folder. Examine the current `NAMESPACE` and `man` folder contents to see how that is done.
 * Update the `NEWS.md` and `NEWS` files indicating changes to the package. NEWS.md is used for the static website and, ideally, will just be a copy of `NEWS`.
-* Add a vignette to the `vignettes` folder. Use the basic vignette (`packageSkeletonForR.Rmd`) in the folder as a starter.
+* Add a vignette to the `vignettes` folder. Use the basic vignette that you're reading now (`packageSkeletonForR.Rmd`) in the folder as a starter.
 * Change the version number in `DESCRIPTION`, `inst/CITATION`, `man/packageSkeletonForR.Rmd` (last file should be named the package name you picked).
 
+To help illustrate what all these changes would look like, I've cloned the **packageSkeletonForR** and modified it and created a customized version of
+it called **customizedPackageForR**:
 
-# Step 4: Compile your package locally
+* [GitHub repo]()
+* [Project Website]()
 
-To make sure everything is working (be prepared to have some things not work) build your package locally. If you're using RStudio, there are capabilities to
-build the package embedded into the user interface. If you are using
 
+
+# Step 4: Build, check and install your package locally
+
+Once you get your package tidied up with name changes and customizations, to make sure everything is working build your package locally.
+If you're using RStudio, there are capabilities to [build the package](https://support.rstudio.com/hc/en-us/articles/200486488-Developing-Packages-with-RStudio) included in the user interface. If you are using OSX or Windows you will likely be using the command line to [build, check, and install your package locally](https://kbroman.org/pkg_primer/pages/build.html).
 
 # Step 5: Update your package website
 
@@ -112,7 +121,7 @@ development versions of the package available via GitHub and periodically post a
 
 # Contributions & Requests
 
-The **packageSkeletonForR** Package is crafted with :heart: by:
+The **packageSkeletonForR** Package is crafted with ❤️ by:
 
 * [Damian Betebenner](https://github.com/dbetebenner)
 
