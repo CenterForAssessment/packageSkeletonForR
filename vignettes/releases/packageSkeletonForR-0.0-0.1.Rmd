@@ -1,6 +1,6 @@
 ---
 title: "packageSkeletonForR 0.0-0.1"
-date: "June 21st, 2021"
+date: "April 21st, 2022"
 ---
 
 ```{r, echo = FALSE}

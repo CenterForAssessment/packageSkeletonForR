@@ -1,6 +1,6 @@
 Package: packageSkeletonForR
 Version: 0.0-0.1
-Date: 2022-6-21
+Date: 2022-4-21
 Title: A GitHub based package skeleton for R together with a static website
 Description: A GitHub based package skeleton for R. The repo includes the package skeleton, yml and markdown to produce a static website using additional R packages (packagePages and centerPackageTemplate).
 Authors@R: c(person(given=c("Damian", "W."), family="Betebenner", email="dbetebenner@nciea.org", role=c("aut", "cre")))

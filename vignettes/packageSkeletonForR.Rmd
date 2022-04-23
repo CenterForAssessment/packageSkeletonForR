@@ -61,7 +61,6 @@ start creating a new repo that will house the source code for your R package. He
 
 <img src="img/create_new_repo.png" alt="Create a new repo with your package name and description" style="width:80%; border: 1px solid #ddd; border-radius: 4px;"/>
 
-
 # Step 3: Have fun customizing the package
 
 The **packageSkeletonForR** package is a super simple R package that contains just two functions for illustration purposes: `strHead` and `strTail`.
@@ -80,9 +79,8 @@ Some things you should do:
 To help illustrate what all these changes would look like, I've cloned the **packageSkeletonForR** and modified it and created a customized version of
 it called **customizedPackageForR**:
 
-* [GitHub repo]()
-* [Project Website]()
-
+* [GitHub repo](https://github.com/dbetebenner/customizedPackageForR)
+* [Website](https://dbetebenner.github.io/customizedPackageForR/)
 
 
 # Step 4: Build, check and install your package locally
@@ -121,7 +119,7 @@ development versions of the package available via GitHub and periodically post a
 
 # Contributions & Requests
 
-The **packageSkeletonForR** Package is crafted with ❤️ by:
+The **packageSkeletonForR** Package is crafted with love by:
 
 * [Damian Betebenner](https://github.com/dbetebenner)
 

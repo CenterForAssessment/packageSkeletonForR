@@ -12,7 +12,7 @@ A GitHub based package skeleton for R. The repo includes the package skeleton, y
 Package: \tab packageSkeletonForR\cr
 Type: \tab Package\cr
 Version: \tab 0.0-0.1\cr
-Date: \tab 2021-06-21\cr
+Date: \tab 2022-04-21\cr
 License: \tab GPL-3\cr
 LazyLoad: \tab yes\cr
 }

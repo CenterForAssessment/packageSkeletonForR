@@ -30,12 +30,12 @@ navbar:
       - icon: fab fa-github
         href: https://github.com/centerforassessment/packageSkeletonForR
       - icon: fab fa-twitter
-        href: https://twitter.com/intent/tweet?url=https%3A%2F%2Fcenterforassessment.github.io%2FpackageSkeletonForR&via=dbetebenner&text=packageSkeletonForR%3A%20R%20package%20to%20convert%20cardinal%20to%20ordinal%20numbers&hashtags=packageSkeletonForR%2Crstats
+        href: https://twitter.com/intent/tweet?url=https%3A%2F%2Fcenterforassessment.github.io%2FpackageSkeletonForR&via=dbetebenner&text=packageSkeletonForR%3A%20R%20GitHub%20repo%20template%20to%20create%20your%20own%20R%20package%20and%20website&hashtags=packageSkeletonForR%2Crstats
 
 
 reference:
       - title: Low level utility functions
-        desc: Basic functions for data manipulation and other low level tasks. 
+        desc: Basic functions for data manipulation and other low level tasks.
         contents:
             - strHead
             - strTail
